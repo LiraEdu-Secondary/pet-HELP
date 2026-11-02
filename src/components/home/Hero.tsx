@@ -1,10 +1,11 @@
-import { Card } from "../ui/card";
+import { Button } from "../ui/button";
+import { Card, CardContent } from "../ui/card";
 
 export default function Hero() {
   return (
     <section className="bg-[#FFF7F0]">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 py-12 lg:min-h-[36.6rem] lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:px-0">
-        <div className="flex flex-col items-center gap-5 border border-red-500">
+        <div className="flex flex-col gap-5 border border-red-500">
           <article className="flex flex-col gap-8 p-4">
             <h1 className="text-5xl font-bold">
               Ajude a levar todo pet de volta para sua casa
@@ -17,8 +18,12 @@ export default function Hero() {
           </article>
 
           {/*Busca Pet*/}
-          <Card>
-            
+          <Card className="flex flex-row justify-between max-w-[400px] p-2">
+            <CardContent>bloco 1</CardContent>
+
+            <CardContent>bloco 2</CardContent>
+
+            <Button>buscar</Button>
           </Card>
         </div>
         <div className="border border-red-500">bloco direito</div>
