@@ -11,9 +11,6 @@ function Header() {
     <header className="border-b border-gray-100">
       <div className="flex items-center justify-between border-b border-gray-100 md:px-6 md:py-5">
         <div className="flex gap-2 items-center">
-          <span>
-            <img src={icone} alt="" className="h-8 w-8" />
-          </span>
           <span className="text-lg font-bold text-ink">
             Pet<span className="text-orange-400">HELP</span>
           </span>
@@ -33,25 +30,25 @@ function Header() {
           <ul className="flex gap-8">
             <Link
               to="/"
-              className="cursor-pointer transition-colors duration-200 ease-in-out hover:text-orange-500"
+              className="cursor-pointer transition-colors duration-200 ease-in-out text-[#6B7280] hover:text-orange-300 font-semibold"
             >
               Inicio
             </Link>
             <Link
               to="/lost"
-              className="cursor-pointer transition-colors duration-200 ease-in-out hover:text-orange-300"
+              className="cursor-pointer transition-colors duration-200 ease-in-out text-[#6B7280] hover:text-orange-300 font-semibold"
             >
               Pets perdidos
             </Link>
             <Link
               to="/found"
-              className="cursor-pointer transition-colors duration-200 ease-in-out hover:text-orange-300"
+              className="cursor-pointer transition-colors duration-200 ease-in-out text-[#6B7280] hover:text-orange-300 font-semibold"
             >
               Pets encontrados
             </Link>
             <Link
               to="/how-it-work"
-              className="cursor-pointer transition-colors duration-200 ease-in-out hover:text-orange-300"
+              className="cursor-pointer transition-colors duration-200 ease-in-out text-[#6B7280] hover:text-orange-300 font-semibold"
             >
               Como funciona
             </Link>
@@ -64,7 +61,7 @@ function Header() {
           >
             Entrar
           </Button>
-          <Button className="bg-orange-400 cursor-pointer">
+          <Button variant="primary" className="p-4 text-sm cursor-pointer">
             Cadastrar pet
           </Button>
         </div>
