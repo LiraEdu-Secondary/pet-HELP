@@ -1,5 +1,6 @@
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
+import PetStatusCard from "./PetStatusCard";
 
 export default function Hero() {
   return (
@@ -57,7 +58,17 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="border border-red-500">bloco direito</div>
+        {/*Imagem do pet com o tutor*/}
+        <div className="relative mx-auto aspect-4/3 w-full max-w-xl overflow-hidden rounded-3xl bg-[#FFE5D0]">
+          <div className="flex h-full items-center justify-center px-6 text-center text-sm text-orange-700">
+            Imagem de destaque (pet + tutor)
+          </div>
+
+          {/*Card de status do pet*/}
+          <div className="absolute bottom-3 left-4">
+            <PetStatusCard />
+          </div>
+        </div>
       </div>
     </section>
   );
