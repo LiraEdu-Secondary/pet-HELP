@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import icone from "../assets/Ícone.svg";
 import { Button } from "../components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
